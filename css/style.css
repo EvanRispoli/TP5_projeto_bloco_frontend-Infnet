@@ -1,0 +1,443 @@
+/* CONFIGURAÇÕES GERAIS */
+
+body
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("../images/sala-cinema.jpg");
+}
+
+h1
+{
+	transition: .5s;
+	color: #1da1f2;
+	font-family: 'Lato', sans-serif;
+}
+
+h1:hover
+{
+	color: #da9c49;
+}
+
+h2,
+p,
+a,
+li
+{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+}
+i
+{
+	color: #1da1f2;
+}
+
+ul,
+li
+{
+	display: inline-block;
+}
+
+h1,
+h2,
+i.fa
+{
+	font-size: 1.5rem
+}
+
+/* HEADER */
+
+header
+{
+    top: 0%;
+	width: 100%;
+    z-index: 999;
+	position: fixed;
+	display: inline-block;
+	background: rgba(0,0,0,.8);
+    border-bottom: 1px solid black;
+}
+
+header div
+{
+	width: 33%;
+	padding: 20px 0;
+	text-align: center;
+	display: inline-block;
+}
+
+header div span
+{
+	padding: 0 10px;
+}
+
+header div span:first-child
+{
+	background: #fff;
+}
+
+div.logo
+{
+	padding: 0;
+}
+
+div.logo img
+{
+	width: 4rem;
+}
+
+div.logo img,
+div.logo h1
+{
+	display: inline-block;
+}
+
+div.contact,
+div.visiting,
+div.shop
+{
+	width: 10%;
+}
+
+div.visiting i
+{
+	margin-right: 1rem;
+}
+
+div.shop
+{
+	text-align: left;
+}
+
+div.shop i
+{
+	margin-left: 1rem;
+}
+
+div.contact p,
+div.visiting p,
+div.hide-search p
+{
+	display: inline;
+	vertical-align: super;
+}
+
+div.search i
+{
+	color: black;
+	font-size: 1rem;
+	cursor: pointer;
+	text-shadow: none;
+}
+
+div.search span
+{
+	width: 50%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 15px;
+}
+
+div.search span input
+{
+	border: none;
+	width: 100%;
+    max-width: 70%;
+}
+
+div.hide-search
+{
+	display: none;
+}
+
+/* nav */
+
+nav
+{
+	width: 100%;
+	height: 50px;
+	margin-top: 65px;
+	background-color: rgba(0,0,0,.7);
+}
+
+nav ul
+{
+	right: 12%;
+	position: absolute;
+}
+
+nav ul li
+{
+	padding: 1rem;
+	font-size: 1.3rem;
+}
+
+nav ul li a
+{
+	transition: .5s;
+}
+
+nav ul li a:hover
+{
+	color: #da9c49;
+}
+
+/* main */
+
+main img
+{
+	width: 100%;
+    margin: auto;
+    max-width: 1300px;
+    display: block !important;
+    box-shadow: 0px 15px 35px -20px rgba(0,0,0,.3);
+}
+
+main section
+{
+	width: 100%;
+	max-width: 980px;
+	margin: 30px auto;
+}
+
+main section h2
+{
+	margin: 10px 5px;
+}
+
+
+
+main section.image-caroussel img
+{
+   
+	transition: 1s;
+}
+
+main section.image-caroussel img:hover
+{
+	transform: scale(1.1);
+}
+
+
+/* footer */
+
+footer
+{
+	width: 100%;
+	background-image: linear-gradient(#252525, black);
+}
+
+footer div 
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem 0;
+	max-width: 980px;
+}
+
+footer div section
+{
+	width: 230px;
+	margin-top: 25px;
+	display: inline-grid;
+}
+
+footer div section:last-child
+{
+	width: 100%;
+	margin-top: 50px;
+}
+
+footer div section:last-child p
+{
+	margin-top: 5px;
+	font-size: .7rem;
+}
+
+footer div section h2
+{
+	font-size: 1.3rem;
+}
+
+footer div section p a
+{
+	color: #1da1f2;
+	transition: .5s;
+}
+
+footer div section p a:hover
+{
+	color: #da9c49;
+}
+
+footer div section ul
+{
+	margin-top: .5rem;
+}
+
+footer div section ul li
+{
+	display: block;
+	margin-bottom: .5rem;
+}
+
+footer div section ul li a
+{
+	color: #1da1f2;
+}
+
+footer div section ul.social li
+{
+	margin-right: 10px;
+	display: inline-block;
+}
+
+footer div section ul.social li a i
+{
+	color: #1da1f2;
+}
+
+footer div section ul.social li a[href*="http://www.facebook.com"] i
+{
+	color: #4267B2;
+}
+
+footer div section ul.social li a[href*="http://www.instagram.com"] i
+{
+	color: #da9c49;
+}
+
+footer div section ul.social li a[href*="http://www.google.com"] i
+{
+	color: #b35a4a;
+}
+
+footer div section ul.social li a[href*="http://www.twitter.com"] i
+{
+	color: #1da1f2;
+}
+
+footer div section ul.credit-card li
+{
+	width: 32px;
+	text-indent: -9999px;
+	display: inline-block;
+}
+
+
+.posters{
+    width: 230px;
+    height: 338px;
+}
+
+footer div section ul.credit-card li[value*="cirrus"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 52px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="maestro"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 186px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="electron"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 254px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="mastercard"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 376px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+/* area responsiva */
+
+@media screen and (max-width: 1300px)
+{
+	div.hide-search
+	{
+		display: inline-block;
+	}
+
+	div.search
+	{
+		display: none;
+	}
+
+	div.hide-search,
+	div.contact, 
+	div.visiting, 
+	div.shop 
+	{
+		width: 16%;
+	}
+}
+
+@media screen and (max-width: 990px)
+{
+	footer div,
+	main section
+	{
+		max-width: 600px;
+	}
+
+	main section h2
+	{
+		margin: 0 30px;
+	}
+
+	main section ul li,
+	footer div section
+	{
+		margin: 10px 30px;
+	}
+
+	footer div section:last-child
+	{
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	div.logo h1,
+	div.hide-search p,
+	div.contact p, 
+	div.visiting p
+	{
+		display: none;
+	}
+
+	div.logo
+	{
+		width: 40%;
+		text-align: left;
+		margin-left: 5%;
+	}
+
+	div.hide-search,
+	div.contact, 
+	div.visiting, 
+	div.shop 
+	{
+		width: 10%;
+	}
+}
